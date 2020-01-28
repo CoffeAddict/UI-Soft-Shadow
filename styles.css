@@ -1,0 +1,86 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway';
+}
+* {
+    box-sizing: border-box;
+}
+.main-container {
+    padding: 50px;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.white.main-container {
+    background-color: #c5c5c5
+}
+.black.main-container {
+    background-color: #222222
+}
+.content-box {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.white .content-box {
+    border: 2px solid #cccccc;
+    color: #555555;
+}
+.black .content-box {
+    border: 2px solid rgb(44, 44, 44);
+    color: #ccc;
+}
+.text {
+    padding-left: 5px;
+}
+.white .text {
+    text-shadow: 0 0 2px black;
+}
+.element-shadow {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+.element-shadow:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.white .element-shadow:after {
+    box-shadow: -10px -10px 20px 2px rgb(231, 231, 231);
+}
+.black .element-shadow:after {
+    box-shadow: -10px -10px 20px 2px rgb(44, 44, 44);
+}
+.element-shadow:before {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.white .element-shadow:before {
+    box-shadow: 10px 10px 20px 2px #aaa;
+}
+.black .element-shadow:before {
+    box-shadow: 10px 10px 20px 2px rgb(20, 20, 20);
+}
